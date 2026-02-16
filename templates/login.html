@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gova | Secure Gateway</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body class="bg-[#0f1115] text-gray-200 min-h-screen flex items-center justify-center font-sans">
+    
+    <div class="glass w-full max-w-md p-10 rounded-[2rem] shadow-2xl">
+        <div class="text-center mb-10">
+            <h1 class="text-3xl font-black italic text-white uppercase">Gova<span class="text-indigo-500">.</span></h1>
+            <p class="text-[10px] text-gray-500 uppercase tracking-[0.3em] mt-2 font-bold">Identity & Access Management</p>
+        </div>
+
+        <a href="/auth/sso" 
+           class="w-full flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-black font-bold py-4 rounded-xl transition-all transform active:scale-95 mb-8">
+            <img src="https://authjs.dev/img/providers/microsoft.svg" class="w-5 h-5" alt="MS Logo">
+            <span>Continue with Microsoft</span>
+        </a>
+
+        <div class="relative flex items-center py-4 mb-6">
+            <div class="flex-grow border-t border-white/5"></div>
+            <span class="flex-shrink mx-4 text-gray-600 text-[9px] tracking-widest uppercase font-bold">Internal Override</span>
+            <div class="flex-grow border-t border-white/5"></div>
+        </div>
+
+        <form action="/login" method="post" class="space-y-4">
+            <input type="email" name="username" placeholder="admin@gova.com" required
+                   class="w-full bg-white/[0.03] border border-white/10 rounded-xl p-4 text-sm text-white focus:border-indigo-500 outline-none transition-all">
+            <input type="password" name="password" placeholder="••••••••" required
+                   class="w-full bg-white/[0.03] border border-white/10 rounded-xl p-4 text-sm text-white focus:border-indigo-500 outline-none transition-all">
+            
+            <button type="submit" 
+                    class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded-xl shadow-lg transition-all">
+                Authorize Entry
+            </button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# Secrets
+.env
+.env.local
+
+# Environments
+.venv/
+venv/
+ENV/
+
+# Python internals
+__pycache__/
+*.py[cod]
+
+# Databases
+*.db
+*.sqlite3
+
+# Logs
+*.log
