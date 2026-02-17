@@ -46,7 +46,7 @@ def send_expiry_email(manager_name: str, contractor_name: str, expiry_date: date
     <p>Their contract and system access is scheduled to expire on <strong>{expiry_date.strftime('%Y-%m-%d')}</strong> (in 14 days).</p>
     <p>Please log in to the Gova portal to extend or revoke this access.</p>
     <br>
-    <p><em>Security Note: Failure to act will result in automatic de-provisioning.</em></p>
+    <p><em>Security Note: Failure to act will result in automatic offboarding.</em></p>
     """
 
 
