@@ -1,7 +1,7 @@
 # GOVA: Enterprise Contractor Governance & Lifecycle Platform
 
 ## Overview
-**GOVA** (Governance & Oversight Visual Analytics) is a specialized control plane designed to solve the "External Workforce Problem." In large enterprises, tracking when contractors (FL) lose access is a major security risk. 
+**GOVA** (Governance & Oversight Visual Analytics) is a specialised control plane designed to solve the "External Workforce Problem." In large enterprises, tracking when contractors (FL) lose access is a major security risk. 
 
 GOVA automates the **discovery, monitoring, and offboarding** of external users by integrating directly with **Microsoft Entra ID (Azure AD)**.
 
